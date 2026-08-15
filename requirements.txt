@@ -1,0 +1,6 @@
+beautifulsoup4>=4.12,<5.0
+google-generativeai>=0.8,<1.0
+jupyter>=1.0,<2.0
+pandas>=2.0,<3.0
+tqdm>=4.66,<5.0
+
