@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="850" viewBox="0 0 1500 850" role="img" aria-labelledby="title desc">
+  <title id="title">NLP methodology for extracting AI disclosures from 10-K filings</title>
+  <desc id="desc">An academic research diagram emphasizing document preprocessing, prompt design, Gemini-based information extraction, structured parsing, corpus aggregation, and validation.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#586879"/>
+    </marker>
+    <style>
+      .title { font: 600 31px Georgia, 'Times New Roman', serif; fill: #17304d; }
+      .heading { font: 600 19px Georgia, 'Times New Roman', serif; fill: #17304d; }
+      .subheading { font: 600 16px Georgia, 'Times New Roman', serif; fill: #17304d; }
+      .cardheading { font: 600 15px Georgia, 'Times New Roman', serif; fill: #17304d; }
+      .subtitle { font: 15px Arial, Helvetica, sans-serif; fill: #5b6876; }
+      .label { font: 600 11px Arial, Helvetica, sans-serif; letter-spacing: 1.4px; fill: #667482; }
+      .body { font: 14px Arial, Helvetica, sans-serif; fill: #354452; }
+      .small { font: 12px Arial, Helvetica, sans-serif; fill: #687582; }
+      .mono { font: 12px 'Courier New', monospace; fill: #354452; }
+      .panel { fill: #ffffff; stroke: #aeb8c2; stroke-width: 1.1; }
+      .card { fill: #f7f9fb; stroke: #8797a6; stroke-width: 1; }
+      .rule { stroke: #c8d0d7; stroke-width: 1; }
+      .flow { fill: none; stroke: #586879; stroke-width: 1.35; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1500" height="850" fill="#f5f6f8"/>
+  <rect x="38" y="28" width="1424" height="794" fill="#ffffff" stroke="#c3cad2"/>
+  <line x1="38" y1="28" x2="1462" y2="28" stroke="#17304d" stroke-width="5"/>
+
+  <text x="70" y="76" class="title">NLP methodology for corporate AI disclosure analysis</text>
+  <text x="70" y="106" class="subtitle">A portfolio study of long-form information extraction from ten Form 10-K filings</text>
+
+  <rect x="70" y="133" width="1360" height="54" fill="#f1f4f7" stroke="#c8d0d7"/>
+  <text x="92" y="155" class="label">RESEARCH QUESTION</text>
+  <text x="254" y="167" class="heading">How do firms describe AI-related risk, opportunity, and investment in regulatory filings?</text>
+
+  <!-- Input panel -->
+  <g transform="translate(70 223)">
+    <text x="0" y="0" class="label">DOCUMENT CORPUS</text>
+    <rect x="0" y="18" width="245" height="390" class="panel"/>
+    <text x="22" y="57" class="heading">Form 10-K filings</text>
+    <line x1="22" y1="75" x2="223" y2="75" class="rule"/>
+    <text x="22" y="108" class="body">Ten US-listed firms</text>
+    <text x="22" y="137" class="body">HTML / Inline XBRL</text>
+    <text x="22" y="166" class="body">Long-form narrative</text>
+    <text x="22" y="195" class="body">Financial disclosures</text>
+    <line x1="22" y1="220" x2="223" y2="220" class="rule"/>
+    <text x="22" y="252" class="label">ANALYTICAL TARGETS</text>
+    <text x="22" y="284" class="body">AI-related risk</text>
+    <text x="22" y="313" class="body">AI-related opportunity</text>
+    <text x="22" y="342" class="body">Investment disclosure</text>
+    <text x="22" y="371" class="body">Investment value</text>
+  </g>
+
+  <path d="M328 437 H358" class="flow"/>
+
+  <!-- Method panel -->
+  <g transform="translate(372 223)">
+    <text x="0" y="0" class="label">NLP RESEARCH DESIGN</text>
+    <rect x="0" y="18" width="790" height="390" class="panel"/>
+
+    <g transform="translate(22 44)">
+      <rect width="228" height="134" class="card"/>
+      <rect width="228" height="5" fill="#637f99"/>
+      <text x="16" y="31" class="label">01 · PREPROCESS</text>
+      <text x="16" y="61" class="cardheading">Document normalisation</text>
+      <text x="16" y="88" class="small">Parse HTML and remove tags</text>
+      <text x="16" y="110" class="small">Filter URLs; normalise spaces</text>
+    </g>
+
+    <path d="M260 111 H278" class="flow"/>
+
+    <g transform="translate(290 44)">
+      <rect width="228" height="134" class="card"/>
+      <rect width="228" height="5" fill="#637f99"/>
+      <text x="16" y="31" class="label">02 · SPECIFY</text>
+      <text x="16" y="61" class="cardheading">Prompt and schema design</text>
+      <text x="16" y="88" class="small">Define semantic categories</text>
+      <text x="16" y="110" class="small">Set units, nulls, and delimiters</text>
+    </g>
+
+    <path d="M528 111 H546" class="flow"/>
+
+    <g transform="translate(558 44)">
+      <rect width="210" height="134" class="card"/>
+      <rect width="210" height="5" fill="#637f99"/>
+      <text x="16" y="31" class="label">03 · EXTRACT</text>
+      <text x="16" y="60" class="cardheading">Gemini-based</text>
+      <text x="16" y="80" class="cardheading">information extraction</text>
+      <text x="16" y="106" class="small">Filing-level inference</text>
+      <text x="16" y="124" font-family="Arial, Helvetica, sans-serif" font-size="9.5" fill="#687582">Original implementation: Gemini 2.0 Flash</text>
+    </g>
+
+    <path d="M663 190 V210" class="flow"/>
+
+    <g transform="translate(424 222)">
+      <rect width="344" height="132" class="card"/>
+      <rect width="344" height="5" fill="#557f78"/>
+      <text x="16" y="31" class="label">04 · PARSE</text>
+      <text x="16" y="61" class="cardheading">Structured representation</text>
+      <text x="16" y="88" class="mono">Risk | Opportunity | Investment</text>
+      <text x="16" y="111" class="mono">Investment Value (USD bn)</text>
+    </g>
+
+    <path d="M412 288 H394" class="flow"/>
+
+    <g transform="translate(22 222)">
+      <rect width="360" height="132" class="card"/>
+      <rect width="360" height="5" fill="#557f78"/>
+      <text x="16" y="31" class="label">05 · SCALE</text>
+      <text x="16" y="61" class="cardheading">Corpus-level aggregation</text>
+      <text x="16" y="88" class="small">Reusable extraction function</text>
+      <text x="16" y="110" class="small">Consistent fields across ten filings</text>
+    </g>
+  </g>
+
+  <path d="M1175 437 H1205" class="flow"/>
+
+  <!-- Research artifacts -->
+  <g transform="translate(1219 223)">
+    <text x="0" y="0" class="label">RESEARCH ARTIFACTS</text>
+    <rect x="0" y="18" width="211" height="390" class="panel"/>
+    <text x="20" y="57" class="heading">Structured dataset</text>
+    <line x1="20" y1="75" x2="191" y2="75" class="rule"/>
+    <text x="20" y="108" class="body">Company summaries</text>
+    <text x="20" y="137" class="body">Numeric variables</text>
+    <text x="20" y="166" class="body">Sentiment labels</text>
+    <text x="20" y="195" class="body">Comparative analysis</text>
+    <line x1="20" y1="220" x2="191" y2="220" class="rule"/>
+    <text x="20" y="252" class="label">ROLE IN PORTFOLIO</text>
+    <text x="20" y="283" class="small">Outputs demonstrate</text>
+    <text x="20" y="304" class="small">the NLP pipeline.</text>
+    <text x="20" y="335" class="small">Methodological design</text>
+    <text x="20" y="356" class="small">is the main contribution.</text>
+  </g>
+
+  <!-- Evaluation strip -->
+  <g transform="translate(70 667)">
+    <text x="0" y="0" class="label">EVALUATION AND EXTENSIONS</text>
+    <rect x="0" y="17" width="1360" height="72" fill="#f8fafb" stroke="#aeb8c2"/>
+    <line x1="272" y1="32" x2="272" y2="74" class="rule"/>
+    <line x1="544" y1="32" x2="544" y2="74" class="rule"/>
+    <line x1="816" y1="32" x2="816" y2="74" class="rule"/>
+    <line x1="1088" y1="32" x2="1088" y2="74" class="rule"/>
+    <text x="20" y="47" class="subheading">Evidence grounding</text>
+    <text x="20" y="68" class="small">Quotes and source locations</text>
+    <text x="292" y="47" class="subheading">Schema validation</text>
+    <text x="292" y="68" class="small">Reject malformed responses</text>
+    <text x="564" y="47" class="subheading">Context management</text>
+    <text x="564" y="68" class="small">Retrieval and chunking</text>
+    <text x="836" y="47" class="subheading">Reproducibility</text>
+    <text x="836" y="68" class="small">Version, prompt, and latency</text>
+    <text x="1108" y="47" class="subheading">Human verification</text>
+    <text x="1108" y="68" class="small">Compare claims with filings</text>
+  </g>
+
+  <text x="70" y="801" class="small">Figure 1. Methodological architecture for LLM-assisted information extraction from long-form financial documents.</text>
+</svg>
