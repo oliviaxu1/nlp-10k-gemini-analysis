@@ -2,11 +2,9 @@
 
 This project applies natural language processing and Gemini-based information extraction to identify AI-related risks, opportunities, investment disclosures, and high-level sentiment in ten US companies' Form 10-K filings. The original implementation used Gemini 2.0 Flash.
 
-The project originated in graduate coursework for **FNCE90084 Applications of Machine Learning in Finance at the University of Melbourne**. This repository is a public portfolio adaptation: course instructions, grading material, teaching templates, and course-provided data have been removed.
-
 ![Project workflow](assets/project-overview.svg)
 
-## Methodological focus
+## Methodology
 
 - **Document NLP:** converts heterogeneous filing HTML into normalised text with Beautiful Soup and regular expressions.
 - **Prompt specification:** defines task scope, semantic categories, null handling, numeric units, and a predictable response structure.
@@ -53,7 +51,7 @@ data/CRM_latest_10K.html
 data/ORCL_latest_10K.html
 ```
 
-Because filing dates and contents can differ from the original course dataset, a new run may not reproduce the preserved outputs exactly.
+Because filing dates and contents can differ from the original dataset, a new run may not reproduce the preserved outputs exactly.
 
 ## Setup
 
@@ -75,6 +73,6 @@ Never commit a real API key.
 - Extracted investment values are not automatically comparable across companies.
 - A production version should use chunk-level retrieval, evidence quotations, schema-constrained output, and programmatic source validation.
 
-## Responsible use
+## Academic Context
 
-This repository is an educational portfolio artifact, not investment advice. Verify every extracted claim against the original SEC filing before using it in research or decision-making.
+This repository originated in graduate coursework for **Applied Machine Learning in Finance** at the University of Melbourne. It has been reorganised and revised for public presentation.
