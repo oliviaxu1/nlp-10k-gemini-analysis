@@ -17,10 +17,9 @@ CRM_latest_10K.html
 ORCL_latest_10K.html
 ```
 
-## Important limitations
+## Limitations
 
 - Filing dates and document contents may differ from the original course dataset.
 - New Gemini runs may not exactly reproduce the summarised portfolio results.
-- Do not commit course-provided files or any dataset you are not authorised to redistribute.
 - Verify each model-extracted claim against the corresponding filing before using it.
 
